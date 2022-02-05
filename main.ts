@@ -1,3 +1,10 @@
+input.onLogoEvent(TouchButtonEvent.Touched, function () {
+    mae()
+    mae()
+    mae()
+    mae()
+    basic.showIcon(IconNames.Happy)
+})
 function mae () {
     basic.showLeds(`
         . . # . .
@@ -38,9 +45,9 @@ input.onButtonPressed(Button.A, function () {
 function hidari () {
     basic.showLeds(`
         . . # . .
-        . # . . .
+        . . . # .
         # # # # #
-        . # . . .
+        . . . # .
         . . # . .
         `)
     pins.digitalWritePin(DigitalPin.P13, 1)
@@ -74,9 +81,9 @@ function usiro () {
 function migi () {
     basic.showLeds(`
         . . # . .
-        . . . # .
+        . # . . .
         # # # # #
-        . . . # .
+        . # . . .
         . . # . .
         `)
     pins.digitalWritePin(DigitalPin.P13, 0)
